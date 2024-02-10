@@ -1,0 +1,14 @@
+{
+  "name": "word-finder",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "vite": "^5.0.8"
+  }
+}
