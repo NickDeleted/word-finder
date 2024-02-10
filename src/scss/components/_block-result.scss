@@ -1,0 +1,32 @@
+.block-result {
+  padding: 48px 28px;
+  border: 2px solid $border;
+  border-radius: 5px;
+}
+
+.words__field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-self: start;
+
+  span {
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: $bgLight;
+    border-radius: 5px;
+  }
+}
+
+.block-result__footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.block-result__info {
+  font-size: 20px;
+}

@@ -1,0 +1,10 @@
+.content__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin: 30px 0;
+
+  @include medium {
+    grid-template-columns: auto;
+  }
+}

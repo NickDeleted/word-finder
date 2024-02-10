@@ -1,0 +1,37 @@
+.button {
+  min-width: 282px;
+  height: 46px;
+  background-color: $accent;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accentHover;
+  }
+
+  &:focus {
+    background-color: $accentHover;
+  }
+}
+
+.clear__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+  align-self: end;
+  padding: 8px 0 8px 8px;
+  margin-top: 8px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+  }
+}
