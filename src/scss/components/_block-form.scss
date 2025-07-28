@@ -1,3 +1,5 @@
+@use '../abstract/variables' as *;
+
 .block-form {
   border: 2px solid $border;
   border-radius: 5px;

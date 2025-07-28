@@ -1,13 +1,13 @@
-@import 'abstract/functions';
-@import 'abstract/variables';
-@import 'abstract/mixins';
-@import 'base/normalize';
-@import 'base/font-face';
-@import 'base/base';
+@use 'abstract/functions';
+@use 'abstract/variables';
+@use 'abstract/mixins';
+@use 'base/normalize';
+@use 'base/font-face';
+@use 'base/base';
 
-@import 'components/header';
-@import 'components/footer';
-@import 'components/buttons';
-@import 'components/content';
-@import 'components/block-result';
-@import 'components/block-form';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/buttons';
+@use 'components/content';
+@use 'components/block-result';
+@use 'components/block-form';

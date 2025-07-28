@@ -1,3 +1,5 @@
+@use '../abstract/mixins' as *;
+
 .content__grid {
   display: grid;
   grid-template-columns: 1fr 2fr;

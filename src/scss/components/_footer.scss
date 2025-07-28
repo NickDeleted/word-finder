@@ -1,3 +1,5 @@
+@use '../abstract/variables' as *;
+
 .footer{
   background-color: $bgBlack;
   padding: 24px 0;
