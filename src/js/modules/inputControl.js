@@ -13,7 +13,7 @@ function inputControl() {
         enteredChars = enteredChars.split('').filter(char => char !== inputValue.slice(-1)).join('');
       }
       const lastChar = inputElement.value.slice(-1);
-      
+
       if (enteredChars.includes(lastChar) && inputElement.value.length > 0) {
         inputElement.value = inputElement.value.slice(0, -1);
       } else {
@@ -27,7 +27,7 @@ function inputControl() {
     });
 
     inputElement.addEventListener('keydown', event => {
-      
+
       if (event.key === 'Backspace' && event.target === inputElement) {
         const inputValue = inputElement.value;
 
@@ -48,11 +48,25 @@ function inputControl() {
       button.addEventListener('click', event => {
         event.preventDefault();
 
-        const input = button.previousElementSibling;
-        const inputValue = input.value;
+        if (button.id === 'included-button' || button.id === 'excluded-button') {
 
-        enteredChars = enteredChars.split('').filter(char => !inputValue.includes(char)).join('');
-        input.value = '';
+          const input = button.previousElementSibling;
+          const inputValue = input.value;
+
+          enteredChars = enteredChars.split('').filter(char => !inputValue.includes(char)).join('');
+          input.value = '';
+
+        }
+
+        if (button.id === 'word-clear-button') {
+
+        const letterInputs = document.querySelectorAll('.input__letter');
+
+        letterInputs.forEach(input => {
+          input.value = '';
+        });
+
+      }
 
         return enteredChars;
       });
